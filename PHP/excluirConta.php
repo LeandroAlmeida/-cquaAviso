@@ -5,7 +5,7 @@
 
     $host="mysql14.000webhost.com"; // Host name
      $username="a3780406_Leo";; // Mysql username
-     $password="120330Leo"; // Mysql password
+     $password="..."; // Mysql password
      $db_name="a3780406_BD"; // Database name
 
   mysql_connect($host, $username, $password)or die("cannot connect");//criei uma variavel e fiz a conexao com servidor (server, usuario e senha)
