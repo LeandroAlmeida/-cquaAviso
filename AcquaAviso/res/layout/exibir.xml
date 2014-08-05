@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/fundoexibir">
+
+    <TextView
+        android:id="@+id/textViewExibirAssalto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewExibirAfogamento"
+        android:layout_marginLeft="62dp"
+        android:layout_toRightOf="@+id/textViewExibirTubarao"
+        android:text="0 Assalto/Arrastão"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewExibirOutros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewExibirTubarao"
+        android:layout_alignBottom="@+id/textViewExibirTubarao"
+        android:layout_alignLeft="@+id/textViewExibirAssalto"
+        android:text="1 Outros"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewExibirLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Praia de Boa Vista/PE"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:id="@+id/scrollViewExibir"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerExibir"
+        android:background="@layout/forma" >
+
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textViewExibirAtropelamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewExibirOutros"
+        android:text="0 Atropelamento"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewExibirTubarao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewExibirAfogamento"
+        android:text="2 Ataque de tubarão"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewExibirAfogamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewExibirLocal"
+        android:layout_marginTop="6dp"
+        android:text="1 Afogamento"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewExibirPositivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewExibirAtropelamento"
+        android:layout_alignBottom="@+id/textViewExibirAtropelamento"
+        android:layout_alignLeft="@+id/textViewExibirOutros"
+        android:text="1 Relato positivo" 
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/spinnerExibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewExibirPositivo"
+        android:background="@drawable/spinner2"
+        android:entries="@array/itensSpinner"
+        android:prompt="@string/tituloSpinner"
+        tools:listitem="@layout/tamanhospinner" />
+
+</RelativeLayout>

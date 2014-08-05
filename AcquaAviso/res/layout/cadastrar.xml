@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundologo" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="22dp"
+        android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextCadastrarRelato"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCadastrarEnviar"
+        android:layout_alignLeft="@+id/textViewCadastrarTipo"
+        android:layout_alignRight="@+id/editTextCadastrar_Local"
+        android:layout_below="@+id/textViewCadastrarTipo"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLength="144" />
+
+    <Spinner
+        android:id="@+id/spinnerCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editTextCadastrarRelato"
+        android:layout_alignRight="@+id/editTextCadastrarRelato"
+        android:background="@drawable/spinner2"
+        android:entries="@array/itensSpinner"
+        android:prompt="@string/tituloSpinner"
+        tools:listitem="@layout/tamanhospinner" />
+
+    <EditText
+        android:id="@+id/editTextCadastrar_Local"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewCadastrarEstado"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:hint="Praia, rio ..."
+         >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewCadastrarLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCadastrar_Local"
+        android:layout_alignBottom="@+id/editTextCadastrar_Local"
+        android:layout_alignParentLeft="true"
+        android:text="Local:"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editTextCadastrar_Estado"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCadastrar_Local"
+        android:layout_below="@+id/editTextCadastrar_Local"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:hint="Ex: RN"
+        android:maxLength="2" />
+
+    <TextView
+        android:id="@+id/textViewCadastrarEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCadastrar_Estado"
+        android:layout_alignBottom="@+id/editTextCadastrar_Estado"
+        android:layout_alignParentLeft="true"
+        android:text="Estado:"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textViewCadastrarTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextCadastrar_Estado"
+        android:layout_marginTop="14dp"
+        android:text="Tipo de ocorrência:"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/buttonCadastrarEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Enviar" 
+        android:textColor="#0000FF"/>
+        
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout>

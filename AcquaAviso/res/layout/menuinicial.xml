@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundologo"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="100dp"
+        android:gravity="left" >
+
+	        
+	        
+	         <Button
+	            android:id="@+id/buttonMenuSobre"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentBottom="true"
+	            android:layout_alignParentLeft="true"
+	            android:text="Sobre"
+	            android:textColor="#0000FF"
+	            android:typeface="sans" />
+	
+	        <Button
+	            android:id="@+id/buttonMenuConta"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBaseline="@+id/buttonMenuSobre"
+	            android:layout_alignBottom="@+id/buttonMenuSobre"
+	            android:layout_marginLeft="15dp"
+	            android:layout_toRightOf="@+id/buttonMenuSobre"
+	            android:text="Conta"
+	            android:textColor="#0000FF"
+	            android:typeface="sans" />
+	
+	
+	        <Button
+	            android:id="@+id/buttonMenuVisualizar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="56dp"
+	            android:text="          Vizualizar          "
+	            android:textColor="#0000FF"
+	            android:typeface="sans" />
+	        
+	        <Button
+	            android:id="@+id/buttonMenuCadastrar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/buttonMenuVisualizar"
+	            android:layout_below="@+id/buttonMenuVisualizar"
+	            android:layout_marginTop="24dp"
+	            android:text="          Cadastrar           "
+	            android:textColor="#0000FF"
+	            android:typeface="sans" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

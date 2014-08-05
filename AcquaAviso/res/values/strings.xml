@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AquaAviso</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tituloSpinner">Exibir</string>
+    <string-array name="itensSpinner">
+        <item>Todos</item>
+        <item>Afogamento</item>
+        <item>Tubarão</item>
+        <item>Atropelamento</item>
+        <item>Assalto/Arrastão</item>
+        <item>Relato Positivo</item>
+        <item>Outros</item>
+    </string-array>
+
+</resources>

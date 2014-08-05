@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundologo"
+    tools:context=".MainActivity" >
+
+   
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="140dp" >
+
+    <EditText
+        android:id="@+id/editTextCadastrar_Local"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCadastrar_Estado"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:hint="Praia, rio ..."
+        />
+
+    <TextView
+        android:id="@+id/textViewVisualizarLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCadastrar_Local"
+        android:layout_alignBottom="@+id/editTextCadastrar_Local"
+        android:layout_alignParentLeft="true"
+        android:text="Local:"
+        android:textColor="#000000"
+        android:typeface="sans" 
+        />
+
+    <EditText
+        android:id="@+id/editTextCadastrar_Estado"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCadastrar_Local"
+        android:layout_toRightOf="@+id/textViewVisualizarEstado"
+        android:inputType="textCapCharacters"
+        android:ems="10"
+        android:hint="EX: RN"
+        android:maxLength="2" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textViewVisualizarEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextCadastrar_Estado"
+        android:layout_alignBottom="@+id/editTextCadastrar_Estado"
+        android:layout_alignParentLeft="true"
+        android:text="Estado:"
+        android:textColor="#000000"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/buttonMenuVizualizarOk"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonMenuVizualizarLocais"
+        android:layout_alignBottom="@+id/buttonMenuVizualizarLocais"
+        android:layout_alignParentLeft="true"
+        android:text="OK"
+        android:textColor="#0000FF"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/buttonMenuVizualizarLocais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCadastrar_Estado"
+        android:layout_toRightOf="@+id/buttonMenuVizualizarOk"
+        android:text="Mapa"
+        android:textColor="#0000FF"
+        android:typeface="sans" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
